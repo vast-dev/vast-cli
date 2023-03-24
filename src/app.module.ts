@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { AppService } from './app.service';
-import { NewCommand } from './commands/new.command';
+import { NewCommand, CompileCommand } from './commands';
 import { SchematicService } from './schematics/schematic.service';
 
 @Module({
   imports: [],
   controllers: [],
-  providers: [AppService, SchematicService, NewCommand],
+  providers: [AppService, SchematicService, NewCommand, CompileCommand],
 })
 export class AppModule {}
