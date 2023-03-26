@@ -32,7 +32,7 @@
     "rxjs" "6.6.7"
     "source-map" "0.7.4"
 
-"@angular-devkit/schematics-cli@^15.2.4", "@angular-devkit/schematics-cli@15.2.4":
+"@angular-devkit/schematics-cli@15.2.4":
   "integrity" "sha512-QTTKEH5HOkxvQtCxb2Lna2wubehkaIzA6DKUBISijPQliLomw74tzc7lXCywmMqRTbQPVRLG3kBK97hR4x67nA=="
   "resolved" "https://registry.npmjs.org/@angular-devkit/schematics-cli/-/schematics-cli-15.2.4.tgz"
   "version" "15.2.4"
@@ -1152,13 +1152,13 @@
     "@typescript-eslint/types" "5.56.0"
     "eslint-visitor-keys" "^3.3.0"
 
-"@vast/meta-schematics@file:../meta-schematics":
-  "resolved" "file:../meta-schematics"
-  "version" "0.0.0"
+"@vast/vast@file:../vast":
+  "resolved" "file:../vast"
+  "version" "0.1.0"
   dependencies:
-    "@angular-devkit/core" "^15.2.4"
-    "@angular-devkit/schematics" "^15.2.4"
-    "typescript" "~4.9.3"
+    "@angular-devkit/schematics-cli" "^15.2.4"
+    "chalk" "4.1.2"
+    "node-emoji" "^1.11.0"
 
 "@webassemblyjs/ast@1.11.1":
   "integrity" "sha512-ukBh14qFLjxTQNTXocdyksN5QdM28S1CxHt2rdskFyL+xFV7VremuBLVbmCePj+URalXBENx/9Lm7lnhihtCSw=="
