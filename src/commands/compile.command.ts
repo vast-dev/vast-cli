@@ -3,6 +3,7 @@ import { cwd } from 'process';
 import { join, resolve } from 'path';
 
 import { Vast } from '@vast/vast';
+import { Compiler } from '@vast/vast/dist/compiler';
 
 export interface CompileCommandOptions {
   /**
@@ -20,7 +21,8 @@ export class CompileCommand extends CommandRunner {
     const options = this.normalizeOptions(_options);
     console.log('Compile project to directory ' + options.directory);
 
-    await Vast.compile();
+    const vast = new Vast(new Compiler());
+    await vast.compile();
   }
 
   normalizeOptions(_options?: CompileCommandOptions): CompileCommandOptions {
